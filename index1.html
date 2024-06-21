@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEOOH - Mídia OOH</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8c2984;
+            color: #7444aa;
+            background-image: url('/img/fotoalterada.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-image: url('/img/BRASIL.png');
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            text-align: center;
+            color: #6c4c9c;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .content-left {
+            width: 50%;
+            padding-right: 20px;
+        }
+
+        .content-right {
+            width: 50%;
+            padding-left: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #75598e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .qr-code {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            background-color: #6c4c9c;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><Landing Page></h1>
+        <h2><favela_code></h2>
+    </header>
+
+    <div class="container">
+        <div class="content-left">
+            <h2>Desperte o potencial da <favela> e transforme o seu futuro!</h2>
+            <p>Favela não é carência, favela é potência!</p>
+            <p>Chegamos, família! A Favela Code tem a missão de levar o acesso à educação tecnológica de qualidade para a quebrada.</p>
+            <p>Pega a vida e vem com a gente na caminhada do sucesso. Faça parte desse movimento se inscrevendo!</p>
+            <img src="https://images.unsplash.com/photo-1503376780352-b157a485e410?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="People in the Favela">
+            <p>Try Pitch</p>
+        </div>
+        <div class="content-right">
+            <div class="form">
+                <h2>Preencha com os seus dados</h2>
+                <p>Junte-se à Favela Code para dar o primeiro passo em direção ao futuro melhor da favela.</p>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Telefone" required>
+                <textarea placeholder="O que você faz?" rows="5" required></textarea>
+                <button>Fazer a diferença!</button>
+            </div>
+            <h2>Vamos levar até você a inclusão digital!</h2>
+            <div class="qr-code">
+                <img src="https://www.qrcode-tiger.com/assets/images/qr-code-tiger-logo-cropped.png" alt="QR Code">
+                <p>Conteúdo completo</p>
+            </div>
+            <p>Favela Code é uma iniciativa entre Favela Holding, SoulCode e CUFA com o propósito de capacitar favelados em tecnologia e fazer a ponte para empregabilidade e empreendedorismo.</p>
+            <h2><favela_code></h2>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2023 Favela Code. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Favela Holding</a>
+            <a href="#">SoulCode</a>
+            <a href="#">CUFA</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favela Code e NEOOH - Landing Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #8c2984;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6c4c9c;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .content-left, .content-right {
+            width: 50%;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #75598e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .qr-code {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            background-color: #6c4c9c;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Estilo adicional */
+        main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #591d75;
+            text-align: center;
+        }
+
+        .hero {
+            background-color: rgba(108, 76, 201, 0.5); /* Cor de fundo com transparência */
+            padding: 40px 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: #8c2984;
+        }
+
+        .hero span {
+            color: #ffcc00;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #333333;
+        }
+
+        .button {
+            background-color: #441f83;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .about, .benefits, .subscribe {
+            background-color: rgba(108, 76, 201, 0.5);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .image {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: rgba(108, 76, 156, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        footer p {
+            margin-bottom: 0;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        footer ul li {
+            margin: 0;
+        }
+
+        footer ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .subscribe .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .subscribe .container .form-container,
+        .subscribe .container .image-container {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .subscribe .container .image-container {
+            text-align: center;
+        }
+
+        .subscribe .container .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Estilo para IDs */
+        #6c4c9, #591d75c {
+            color: rgba(108, 76, 201, 0.5); /* Cor de texto com transparência */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Favela Code - Landing Page</h1>
+        <h2>NEOOH - Mídia OOH</h2>
+    </header>
+
+    <div class="container">
+        <div class="content-left">
+            <h2>Desperte o potencial da <span id="6c4c9">favela</span> e transforme o seu futuro!</h2>
+            <p>Favela não é carência, favela é potência!</p>
+            <p>Chegamos, família! A Favela Code tem a missão de levar o acesso à educação tecnológica de qualidade para a quebrada.</p>
+            <p>Pega a vida e vem com a gente na caminhada do sucesso. Faça parte desse movimento se inscrevendo!</p>
+            <img src="https://images.unsplash.com/photo-1503376780352-b157a485e410?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="People in the Favela">
+            <p>Try Pitch</p>
+        </div>
+        <div class="content-right">
+            <div class="form">
+                <h2>Preencha com os seus dados</h2>
+                <p>Junte-se à Favela Code para dar o primeiro passo em direção ao futuro melhor da favela.</p>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Telefone" required>
+                <textarea placeholder="O que você faz?" rows="5" required></textarea>
+                <button>Fazer a diferença!</button>
+            </div>
+            <h2>Vamos levar até você a inclusão digital!</h2>
+            <div class="qr-code">
+                <img src="https://www.qrcode-tiger.com/assets/images/qr-code-tiger-logo-cropped.png" alt="QR Code">
+                <p>Conteúdo completo</p>
+            </div>
+            <p>Favela Code é uma iniciativa entre Favela Holding, SoulCode e CUFA com o propósito de capacitar favelados em tecnologia e fazer a ponte para empregabilidade e empreendedorismo.</p>
+            <h2><span id="591d75c">favela_code</span></h2>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>A NEOOH DOMINOU O BRAZIL ....E O BRASIL TAMBÉM!</h2>
+                <p>Transforme cada jornada em uma experiência com a mídia OOH da NEOOH</p>
+                <a href="#" class="button">Saiba Mais</a>
+            </div>
+        </section>
+
+        <section class="image">
+            <div class="container">
+                <img src="/img/exemplo1.jpg" alt="Exemplo 1">
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Esteja onde você estiver no Brasil, a NEOOH está lá, com uma presença robusta que garante que sua mensagem seja disseminada em todas as regiões.</p>
+                <a href="https://www.neooh.com.br" class="button">Conheça a Neooh</a>
+            </div>
+        </section>
+
+        <section class="image">
+            <div class="container">
+                <img src="/img/exemplo2.jpg" alt="Exemplo 2">
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2>Benefícios da NEOOH e da Mídia OOH:</h2>
+                <ul>
+                    <li>NEOOH permite que sua mensagem alcance um público vasto</li>
+                    <li>Utilizamos tecnologias avançadas para criar campanhas interativas e conectadas</li>
+                    <li>As soluções de mídia OOH da NEOOH oferecem formatos grandes e impressionantes que capturam a atenção</li>
+                    <li>Adaptamos nossas campanhas às suas necessidades específicas</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="image">
+            <div class="container">
+                <img src="/img/exemplo3.jpg" alt="Exemplo 3">
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Faça parte da NeooH</h2>
+                    <p>Preencha o formulário abaixo</p>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="community">Cidade</label>
+                            <input type="text" id="community" name="community" required>
+                        </div>
+                        <button type="submit" class="button">Inscreva-se</button>
+                    </form>
+                </div>
+                <div class="image-container">
+                    <img src="/img/formulario.jpg" alt="Formulário Imagem">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 Favela Code e NEOOH. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Favela Holding</a>
+            <a href="#">SoulCode</a>
+            <a href="#">CUFA</a>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
